@@ -10,7 +10,7 @@ tasks like<br>
 - add canteen items
 - checkcanteen sales
 <br>
-and for employe/client<br>
+and for # employe/client<br>
 - book seats
 - checkwhich movie is out now on cinema
 - check book seats
