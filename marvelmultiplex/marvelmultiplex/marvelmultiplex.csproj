@@ -1,0 +1,365 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C5B4AA3-E836-495F-8ACD-D7AFA13DEB66}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>marvelmultiplex</RootNamespace>
+    <AssemblyName>marvelmultiplex</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="addcanteenitems.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addcanteenitems.Designer.cs">
+      <DependentUpon>addcanteenitems.cs</DependentUpon>
+    </Compile>
+    <Compile Include="addnewmovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="addnewmovie.Designer.cs">
+      <DependentUpon>addnewmovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminhomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminhomepage.Designer.cs">
+      <DependentUpon>adminhomepage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminlogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminlogin.Designer.cs">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookedseatslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookedseatslist.Designer.cs">
+      <DependentUpon>bookedseatslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookmovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookmovie.Designer.cs">
+      <DependentUpon>bookmovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookmovieresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bookmovieresult.Designer.cs">
+      <DependentUpon>bookmovieresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelticket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelticket.Designer.cs">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="cancelticketresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="cancelticketresult.Designer.cs">
+      <DependentUpon>cancelticketresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canteenitemslist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canteenitemslist.Designer.cs">
+      <DependentUpon>canteenitemslist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canteensale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canteensale.Designer.cs">
+      <DependentUpon>canteensale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canteensalelist.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canteensalelist.Designer.cs">
+      <DependentUpon>canteensalelist.cs</DependentUpon>
+    </Compile>
+    <Compile Include="canteenuserpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="canteenuserpage.Designer.cs">
+      <DependentUpon>canteenuserpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="chooseseatspage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="chooseseatspage.Designer.cs">
+      <DependentUpon>chooseseatspage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Class1.cs" />
+    <Compile Include="creditcardpaymentpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="creditcardpaymentpage.Designer.cs">
+      <DependentUpon>creditcardpaymentpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="deletemovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="deletemovie.Designer.cs">
+      <DependentUpon>deletemovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dtabaseconnect.cs" />
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="form2.Designer.cs">
+      <DependentUpon>form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newuserpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newuserpage.Designer.cs">
+      <DependentUpon>newuserpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="showmovielists.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="showmovielists.Designer.cs">
+      <DependentUpon>showmovielists.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticketprint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticketprint.Designer.cs">
+      <DependentUpon>ticketprint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ticketprintresult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ticketprintresult.Designer.cs">
+      <DependentUpon>ticketprintresult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updatemovie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updatemovie.Designer.cs">
+      <DependentUpon>updatemovie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="upipaymentpage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="upipaymentpage.Designer.cs">
+      <DependentUpon>upipaymentpage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="userhomepage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="userhomepage.Designer.cs">
+      <DependentUpon>userhomepage.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="addcanteenitems.resx">
+      <DependentUpon>addcanteenitems.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="addnewmovie.resx">
+      <DependentUpon>addnewmovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminhomepage.resx">
+      <DependentUpon>adminhomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminlogin.resx">
+      <DependentUpon>adminlogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookedseatslist.resx">
+      <DependentUpon>bookedseatslist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookmovie.resx">
+      <DependentUpon>bookmovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookmovieresult.resx">
+      <DependentUpon>bookmovieresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelticket.resx">
+      <DependentUpon>cancelticket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="cancelticketresult.resx">
+      <DependentUpon>cancelticketresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canteenitemslist.resx">
+      <DependentUpon>canteenitemslist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canteensale.resx">
+      <DependentUpon>canteensale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canteensalelist.resx">
+      <DependentUpon>canteensalelist.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="canteenuserpage.resx">
+      <DependentUpon>canteenuserpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="chooseseatspage.resx">
+      <DependentUpon>chooseseatspage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="creditcardpaymentpage.resx">
+      <DependentUpon>creditcardpaymentpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="deletemovie.resx">
+      <DependentUpon>deletemovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="form2.resx">
+      <DependentUpon>form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newuserpage.resx">
+      <DependentUpon>newuserpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="showmovielists.resx">
+      <DependentUpon>showmovielists.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketprint.resx">
+      <DependentUpon>ticketprint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ticketprintresult.resx">
+      <DependentUpon>ticketprintresult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updatemovie.resx">
+      <DependentUpon>updatemovie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="upipaymentpage.resx">
+      <DependentUpon>upipaymentpage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="userhomepage.resx">
+      <DependentUpon>userhomepage.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\darkimg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bkimg1.jpeg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\loginbkg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="marvelmultiplexdb.mdf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="marvelmultiplexdb_log.ldf">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <DependentUpon>marvelmultiplexdb.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\canteen.png" />
+    <None Include="Resources\tickets.png" />
+    <None Include="Resources\ticket1.png" />
+    <None Include="Resources\ticket.png" />
+    <None Include="Resources\icons8-card-payment-48.png" />
+    <None Include="Resources\UPI-Black.png" />
+    <None Include="Resources\seat.png" />
+    <None Include="Resources\armchair.png" />
+    <None Include="Resources\chair.png" />
+    <None Include="Resources\seatsdiagram1.jpg" />
+    <None Include="Resources\guest.png" />
+    <None Include="Resources\usericon.png" />
+    <None Include="Resources\movie1.jpg" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\cinema-screen.ico" />
+    <None Include="Resources\marvellogog.png" />
+    <None Include="Resources\blacktheme.png" />
+    <None Include="Resources\adminloginbkg.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
